@@ -26,7 +26,7 @@ const HomePage = () => {
       {/* <ParallaxData /> */}
       <CompanyData />
       <TeamMentor />
-      {/* <Testimonial /> */}
+      {/* <Testimonial Cons /> */}
       {/* <Stepper /> */}
       <ContactReview />
     </div>
