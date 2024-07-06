@@ -9,7 +9,7 @@ const Banner = () => {
   const items = [
     {
       id: 1,
-      bgImage: "/image/banner1-demo.png",
+      bgImage: "/banner1-demo.png",
       title: "Welcome to WEVLOPER",
       link: "/",
       heading:
