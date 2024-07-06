@@ -10,8 +10,8 @@ import research from "../../../../public/image/Banner/business analysis.gif";
 import {
   AnimatedButton,
   AnimatedTextCus,
-} from "@/Components/Animation/AnimatedText ";
-import TextAnimation from "@/Components/Animation/TextAnimation";
+} from "@/components/Animation/AnimatedText ";
+import TextAnimation from "@/components/Animation/TextAnimation";
 
 const ServiceGallery = () => {
   const items = [

@@ -51,8 +51,21 @@ const Footer = () => {
           <h1>{temperature !== null ? `${temperature}°C` : "Loading..."}</h1>
         </div>
         <div className="flex justify-center items-center space-x-4 text-white">
-          <FaFacebook className=" cursor-pointer" />
-          <FaLinkedin size={20} className=" cursor-pointer" />
+          <a
+            href="https://www.facebook.com/wevloper"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className=" cursor-pointer" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/wevloper/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin size={20} className=" cursor-pointer" />
+          </a>
           <FaDribbble className=" cursor-pointer" />
         </div>
         <div className=" flex items-center gap-3 text-white">

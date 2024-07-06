@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const CompanyData = () => {
   const data = [
@@ -45,7 +46,9 @@ const CompanyData = () => {
               languages, platforms, libraries, and frameworks.
             </h1>
             <button className="px-4 py-2 backdrop-blur-sm border border-emerald-500/20 bg-[#2a286e] transition-colors duration-500 text-white mx-auto text-center rounded-full relative">
-              <span>Explore More →</span>
+              <Link href="/technology">
+                <span>Explore More →</span>
+              </Link>
               <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r mx-auto from-transparent via-emerald-500 to-transparent" />
             </button>
           </div>

@@ -9,8 +9,8 @@ import {
   AnimatedButton,
   AnimatedText,
   AnimatedTextCus,
-} from "@/Components/Animation/AnimatedText ";
-import TextAnimation from "@/Components/Animation/TextAnimation";
+} from "@/components/Animation/AnimatedText ";
+import TextAnimation from "@/components/Animation/TextAnimation";
 
 const ServiceStudio = () => {
   const items = [

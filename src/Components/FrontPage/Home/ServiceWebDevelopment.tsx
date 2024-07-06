@@ -8,8 +8,8 @@ import application from "../../../../public/image/Banner/Ecommerce.gif";
 import {
   AnimatedButton,
   AnimatedText,
-} from "@/Components/Animation/AnimatedText ";
-import TextAnimation from "@/Components/Animation/TextAnimation";
+} from "@/components/Animation/AnimatedText ";
+import TextAnimation from "@/components/Animation/TextAnimation";
 
 const ServiceWebDevelopment = () => {
   const items = [

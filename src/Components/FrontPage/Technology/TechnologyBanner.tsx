@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import techBanner from "../../../../public/image/download (8).gif";
-import TextAnimation from "@/Components/Animation/TextAnimation";
+import TextAnimation from "@/components/Animation/TextAnimation";
 
 const TechnologyBanner = () => {
   return (

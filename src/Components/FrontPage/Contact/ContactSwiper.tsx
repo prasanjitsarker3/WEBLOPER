@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
-import TextAnimation from "@/Components/Animation/TextAnimation";
+import TextAnimation from "@/components/Animation/TextAnimation";
 
 const ContactSwiper = () => {
   const [slidesPerView, setSlidesPerView] = useState(3);

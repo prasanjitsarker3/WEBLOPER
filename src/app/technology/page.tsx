@@ -1,14 +1,14 @@
-import Schedule from "@/Components/Common/Schedule";
-import ContactForm from "@/Components/FrontPage/Technology/ContactForm";
-import Technology from "@/Components/FrontPage/Technology/Technology";
-import TechnologyAbout from "@/Components/FrontPage/Technology/TechnologyAbout";
-import TechnologyBanner from "@/Components/FrontPage/Technology/TechnologyBanner";
-import TechnologyMethod from "@/Components/FrontPage/Technology/TechnologyMethod";
+import Schedule from "@/components/Common/Schedule";
+import ContactForm from "@/components/FrontPage/Technology/ContactForm";
+import Technology from "@/components/FrontPage/Technology/Technology";
+import TechnologyAbout from "@/components/FrontPage/Technology/TechnologyAbout";
+import TechnologyBanner from "@/components/FrontPage/Technology/TechnologyBanner";
+import TechnologyMethod from "@/components/FrontPage/Technology/TechnologyMethod";
 import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Technology",
+  title: "technology",
   description: "We provide technology service",
 };
 

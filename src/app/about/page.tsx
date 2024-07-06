@@ -1,12 +1,12 @@
-import AboutBanner from "@/Components/FrontPage/AboutPage/AboutBanner";
-import AboutExpertises from "@/Components/FrontPage/AboutPage/AboutExpertises";
-import AboutVision from "@/Components/FrontPage/AboutPage/AboutVision";
-import CompanyData from "@/Components/FrontPage/Home/CompanyData";
-import ContactForm from "@/Components/FrontPage/Technology/ContactForm";
+import AboutBanner from "@/components/FrontPage/AboutPage/AboutBanner";
+import AboutExpertises from "@/components/FrontPage/AboutPage/AboutExpertises";
+import AboutVision from "@/components/FrontPage/AboutPage/AboutVision";
+import CompanyData from "@/components/FrontPage/Home/CompanyData";
+import ContactForm from "@/components/FrontPage/Technology/ContactForm";
 import { Metadata } from "next";
 import React from "react";
 export const metadata: Metadata = {
-  title: "WEV|ABOUT",
+  title: "about",
   description: "We provide technology service",
 };
 

@@ -1,5 +1,5 @@
 // pages/contact.js
-import TextAnimation from "@/Components/Animation/TextAnimation";
+import TextAnimation from "@/components/Animation/TextAnimation";
 import React from "react";
 
 const Contact = () => {

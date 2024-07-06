@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/Components/Common/NabarSection";
-import Footer from "@/Components/Common/Footer";
+import Header from "@/components/Common/NabarSection";
+import Footer from "@/components/Common/Footer";
 
 export const metadata: Metadata = {
   title: "WEVLOPER",

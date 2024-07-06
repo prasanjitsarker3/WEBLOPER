@@ -1,14 +1,18 @@
-import ContactBanner from "@/Components/FrontPage/Contact/ContactBanner";
-import ContactForm from "@/Components/FrontPage/Contact/ContactFrom";
-import ContactSwiper from "@/Components/FrontPage/Contact/ContactSwiper";
-import Contact from "@/Components/FrontPage/Contact/WhyContact";
+import ContactBanner from "@/components/FrontPage/Contact/ContactBanner";
+import ContactForm from "@/components/FrontPage/Contact/ContactFrom";
+import ContactSwiper from "@/components/FrontPage/Contact/ContactSwiper";
+import Contact from "@/components/FrontPage/Contact/WhyContact";
+import { Metadata } from "next";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "contact",
+  description: "We provide technology service",
+};
 const ContactPage = () => {
   return (
     <div>
       <ContactBanner />
-      {/* <Contact /> */}
       <ContactSwiper />
       <ContactForm />
     </div>

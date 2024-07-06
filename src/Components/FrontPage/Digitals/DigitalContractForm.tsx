@@ -1,4 +1,4 @@
-import Form from "@/Components/Common/Form";
+import Form from "@/components/Common/Form";
 import { CircleCheckBig, SendHorizontal } from "lucide-react";
 import React from "react";
 

@@ -1,5 +1,6 @@
 "use client";
-import TooltipsUser from "@/Components/CustomPage/TooltipsUser";
+import TooltipsUser from "@/components/CustomPage/TooltipsUser";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const TeamMentor = () => {
@@ -46,7 +47,9 @@ const TeamMentor = () => {
               rewarding option for aspiring developers.
             </h1>
             <button className="px-4 py-2 backdrop-blur-sm border border-emerald-500/20 bg-[#2a286e] transition-colors duration-500 text-white mx-auto text-center rounded-full relative">
-              <span>Explore More →</span>
+              <Link href="/technology">
+                <span>Explore More →</span>
+              </Link>
               <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r mx-auto from-transparent via-emerald-500 to-transparent" />
             </button>
           </div>

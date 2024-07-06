@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import aboutBanner from "../../../../public/image/Banner/U.gif";
-import TextAnimation from "@/Components/Animation/TextAnimation";
+import TextAnimation from "@/components/Animation/TextAnimation";
 
 const AboutBanner = () => {
   return (

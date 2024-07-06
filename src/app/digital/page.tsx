@@ -1,15 +1,15 @@
-import Schedule from "@/Components/Common/Schedule";
-import DigitalBanner from "@/Components/FrontPage/Digitals/Banner";
-import DigitalCard from "@/Components/FrontPage/Digitals/DigitalCard";
-import DigitalContractForm from "@/Components/FrontPage/Digitals/DigitalContractForm";
-import DigitalMarketingServices from "@/Components/FrontPage/Digitals/DigitalMarketingServices";
-import DigitalTools from "@/Components/FrontPage/Digitals/DigitalTools";
-import ContactForm from "@/Components/FrontPage/Technology/ContactForm";
+import Schedule from "@/components/Common/Schedule";
+import DigitalBanner from "@/components/FrontPage/Digitals/Banner";
+import DigitalCard from "@/components/FrontPage/Digitals/DigitalCard";
+import DigitalContractForm from "@/components/FrontPage/Digitals/DigitalContractForm";
+import DigitalMarketingServices from "@/components/FrontPage/Digitals/DigitalMarketingServices";
+import DigitalTools from "@/components/FrontPage/Digitals/DigitalTools";
+import ContactForm from "@/components/FrontPage/Technology/ContactForm";
 import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Digital",
+  title: "digital",
   description: "We Provide Digital Service",
 };
 const DigitalServicePage = () => {

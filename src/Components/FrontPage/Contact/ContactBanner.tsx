@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import bannerImage from "../../../../public/image/Banner/contact.png";
+import Link from "next/link";
 
 const ContactBanner = () => {
   return (
@@ -39,9 +40,9 @@ const ContactBanner = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            Looking for top-tier IT staff augmentation services? Vivasoft has
-            you covered. We offer comprehensive solutions highly skilled
-            personnel to help you grow and strengthen your team.
+            Looking for top-tier IT services? Wevloper has got you covered. We
+            provide comprehensive solutions with highly skilled professionals to
+            help you grow and strengthen your business.
           </motion.p>
 
           <motion.button
@@ -50,7 +51,9 @@ const ContactBanner = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
           >
-            <span>Discover More →</span>
+            <Link href="/technology">
+              <span>Discover More →</span>
+            </Link>
             <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
           </motion.button>
         </div>
