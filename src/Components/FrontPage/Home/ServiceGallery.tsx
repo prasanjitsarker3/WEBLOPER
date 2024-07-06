@@ -17,22 +17,22 @@ const ServiceGallery = () => {
   const items = [
     {
       id: 1,
-      img: digital,
+      img: "/image/Banner/research and development.gif",
       title: "Digital Marketing",
     },
     {
       id: 2,
-      img: socail,
+      img: "/image/Banner/digital marketing.gif",
       title: "Social Media Marketing",
     },
     {
       id: 3,
-      img: busn,
+      img: "/image/Banner/social media marketing.gif",
       title: "Business Analysis",
     },
     {
       id: 4,
-      img: research,
+      img: "/image/Banner/business analysis.gif",
       title: "Research",
     },
   ];
@@ -71,7 +71,6 @@ const ServiceGallery = () => {
             <div className="  md:text-5xl text-3xl primary viga-regular">
               <TextAnimation title=" WEVLOPER |  Digital" />
             </div>
-            {/* <h1 className=" text-[#2C2A77] md:text-5xl text-4xl viga-regular"></h1> */}
           </div>
 
           <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#003249 ">

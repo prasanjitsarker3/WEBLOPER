@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import timeBanner from "../../../public/image/purple-calendar-clock-icon-3d-reminder-notification-concept-website-ui-purple-background-3d-rendering-illustration.png";
 import { Phone } from "lucide-react";
 
 const Schedule = () => {
@@ -27,7 +26,14 @@ const Schedule = () => {
           </button>
         </div>
         <div className="md:w-1/2 w-full mx-auto">
-          <Image src={timeBanner} alt="" width={700} height={700} />
+          <Image
+            src={
+              "/image/purple-calendar-clock-icon-3d-reminder-notification-concept-website-ui-purple-background-3d-rendering-illustration.png"
+            }
+            alt=""
+            width={700}
+            height={700}
+          />
         </div>
       </div>
     </div>

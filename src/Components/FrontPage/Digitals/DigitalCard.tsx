@@ -12,7 +12,7 @@ const DigitalCard = () => {
       id: 1,
       title: "Digital Marketing",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      img: digi,
+      img: "/image/New Banner/Frame_20-removebg-preview.png",
     },
     {
       id: 2,

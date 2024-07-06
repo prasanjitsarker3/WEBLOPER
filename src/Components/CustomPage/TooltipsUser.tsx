@@ -13,37 +13,37 @@ const people = [
     id: 1,
     name: "Ibrahim Khollil ",
     designation: "MD",
-    image: kholil,
+    image: "/image/User/khollil-profile.png",
   },
   {
     id: 2,
     name: "Monirul Islam ",
     designation: "CEO",
-    image: monir,
+    image: "/image/User/monir.png",
   },
   {
     id: 3,
     name: "Prasanjit Sarker",
     designation: "CTO",
-    image: sarker,
+    image: "/image/User/prasanjit.png",
   },
   {
     id: 4,
     name: "Sojib ",
     designation: "Team Lead",
-    image: imran,
+    image: "/image/User/imran.png",
   },
   {
     id: 5,
     name: "Imran Ahamed",
     designation: "Python Developer",
-    image: imran,
+    image: "/image/User/imran.png",
   },
   {
     id: 6,
     name: "Dipak Roy",
     designation: "UI/UX Designer",
-    image: dipok,
+    image: "/image/User/dipak.png",
   },
 ];
 

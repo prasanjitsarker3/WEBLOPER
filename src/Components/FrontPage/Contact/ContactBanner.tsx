@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bannerImage from "../../../../public/image/Banner/contact.png";
 import Link from "next/link";
 
 const ContactBanner = () => {
@@ -60,7 +59,7 @@ const ContactBanner = () => {
         <div className=" md:w-1/2 w-full ">
           <div className="flex justify-center items-center relative h-60">
             <Image
-              src={bannerImage}
+              src={"/image/Banner/contact.png"}
               alt={"Main"}
               width={500}
               height={500}

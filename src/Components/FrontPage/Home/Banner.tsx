@@ -1,34 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import banner1 from "../../../../public/image/banner1-demo.png";
-import banner2 from "../../../../public/image/New Banner/technology.gif";
-import banner3 from "../../../../public/image/New Banner/studio-banner.gif";
-import banner4 from "../../../../public/image/New Banner/WEVLOPER-digital.gif";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
-const gradientAnimation = {
-  initial: {
-    backgroundPosition: "0% 50%",
-  },
-  animate: {
-    backgroundPosition: "200% 50%",
-    transition: {
-      duration: 3,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "mirror",
-    },
-  },
-};
 
 const Banner = () => {
   const items = [
     {
       id: 1,
-      bgImage: banner1,
+      bgImage: "/image/banner1-demo.png",
       title: "Welcome to WEVLOPER",
       link: "/",
       heading:
@@ -36,7 +17,7 @@ const Banner = () => {
     },
     {
       id: 2,
-      bgImage: banner2,
+      bgImage: "/image/New Banner/technology.gif",
       title: "WEVLOPER Technology",
       link: "/technology",
       heading:
@@ -44,7 +25,7 @@ const Banner = () => {
     },
     {
       id: 3,
-      bgImage: banner3,
+      bgImage: "/image/New Banner/studio-banner.gif",
       title: "WEVLOPER Studio",
       link: "/studio",
       heading:
@@ -52,7 +33,7 @@ const Banner = () => {
     },
     {
       id: 4,
-      bgImage: banner4,
+      bgImage: "/image/New Banner/WEVLOPER-digital.gif",
       title: "WEVLOPER Digital",
       link: "digital",
       heading:

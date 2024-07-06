@@ -14,31 +14,31 @@ const OurClient = () => {
   const items = [
     {
       id: 1,
-      img: client,
+      img: "/image/Client/ATE.png",
     },
     {
       id: 2,
-      img: client1,
+      img: "/image/Client/JSB.png",
     },
     {
       id: 3,
-      img: client2,
+      img: "/image/Client/Cfbd.png",
     },
     {
       id: 4,
-      img: client3,
+      img: "/image/Client/FAO.png",
     },
     {
       id: 5,
-      img: client4,
+      img: "/image/Client/FTI.png",
     },
     {
       id: 6,
-      img: client5,
+      img: "/image/Client/HAO.png",
     },
     {
       id: 7,
-      img: client6,
+      img: "/image/Client/TMI.png",
     },
   ];
 

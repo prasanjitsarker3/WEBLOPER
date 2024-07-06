@@ -57,7 +57,7 @@ const DigitalBanner = () => {
         <div className=" md:w-1/2 w-full ">
           <div className="flex justify-center items-center relative md:h-60">
             <Image
-              src={bannerImage}
+              src={"/image/New Banner/digital.png"}
               alt={"Main"}
               width={500}
               height={500}

@@ -32,7 +32,7 @@ const TechnologyBanner = () => {
           <div className=" md:w-1/2 w-full ">
             <div className="flex justify-center items-center relative h-60">
               <Image
-                src={techBanner}
+                src={"/image/download (8).gif"}
                 alt={"Main"}
                 width={500}
                 height={500}

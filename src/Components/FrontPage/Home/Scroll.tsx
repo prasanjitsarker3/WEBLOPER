@@ -1,27 +1,23 @@
 import Image from "next/image";
 import React from "react";
-import case1 from "../../../../public/image/Case/case 1.1.png";
-import case2 from "../../../../public/image/Case/case 2.2.png";
-import case3 from "../../../../public/image/Case/Frame 18 (3).png";
-import case4 from "../../../../public/image/Case/Frame 19 (2).png";
 
 const Scroll = () => {
   const content = [
     {
       title: "Collaborative Editing",
-      img: case3,
+      img: "/image/New Banner/caseF.png",
     },
     {
       title: "Real time changes",
-      img: case2,
+      img: "/image/New Banner/case 2.3.png",
     },
     {
       title: "Version control",
-      img: case1,
+      img: "/image/New Banner/case 1.1.png",
     },
     {
       title: "Running out of content",
-      img: case4,
+      img: "/image/New Banner/Frame 19 (2).png",
     },
   ];
 

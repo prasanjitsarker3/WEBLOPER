@@ -1,10 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import firs1 from "../../../../public/image/Banner/graphics design.gif";
-import firs2 from "../../../../public/image/Banner/ui ux design.gif";
-import firs3 from "../../../../public/image/Banner/wordpress design.gif";
-import firs4 from "../../../../public/image/Banner/video editing.gif";
-import Link from "next/link";
+
 import {
   AnimatedButton,
   AnimatedText,
@@ -16,22 +12,22 @@ const ServiceStudio = () => {
   const items = [
     {
       id: 1,
-      img: firs1,
+      img: "/image/Banner/graphics design.gif",
       title: "Graphics Design",
     },
     {
       id: 2,
-      img: firs2,
+      img: "/image/Banner/ui ux design.gif",
       title: "Wordpress Development",
     },
     {
       id: 3,
-      img: firs3,
+      img: "/image/Banner/wordpress design.gif",
       title: "Video Editing",
     },
     {
       id: 4,
-      img: firs4,
+      img: "/image/Banner/video editing.gif",
       title: "UX / UX",
     },
   ];
@@ -48,18 +44,6 @@ const ServiceStudio = () => {
             </div>
           </div>
 
-          {/* <h1 className=" text-[#2C2A77] md:text-5xl text-3xl text-justify font-rubik font-normal">
-            Graphics Design
-          </h1>
-          <h1 className=" text-[#2C2A77] md:text-5xl text-3xl text-justify  font-normal">
-            Wordpress Design
-          </h1>
-          <h1 className=" text-[#2C2A77] md:text-5xl text-3xl font-rubik font-normal">
-            Video Editing
-          </h1>
-          <h1 className=" text-[#2C2A77] md:text-5xl text-3xl font-rubik font-normal">
-            UI / UX
-          </h1> */}
           <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
             Graphics Design
           </AnimatedTextCus>
@@ -95,9 +79,6 @@ const ServiceStudio = () => {
                   className="rounded-lg bg-[#E86252] transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              {/* <h1 className=" -mt-8 pb-3 text-center text-white font-semibold z-50">
-                {item.title}
-              </h1> */}
             </div>
           ))}
         </div>

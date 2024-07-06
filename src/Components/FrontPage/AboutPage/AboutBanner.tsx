@@ -35,7 +35,7 @@ const AboutBanner = () => {
         <div className=" md:w-1/2 w-full ">
           <div className=" relative h-full w-full">
             <Image
-              src={aboutBanner}
+              src={"/image/Banner/U.gif"}
               alt={"Main"}
               width={500}
               height={500}

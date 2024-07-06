@@ -12,7 +12,7 @@ const StudioBanner = () => {
       <div>
         <div className="absolute inset-0 bg-cover bg-center flex items-center justify-center transition-all duration-700">
           <Image
-            src={banner2}
+            src={"/image/download (2).gif"}
             alt={"Studio"}
             layout="fill"
             objectFit="cover"
@@ -23,7 +23,7 @@ const StudioBanner = () => {
             <div className="space-y-5 md:px-24 px-8">
               <div className=" ">
                 <Image
-                  src={bannerImage}
+                  src={"/image/we-craft-digital-products.png"}
                   alt={"Studio"}
                   height={500}
                   width={300}
