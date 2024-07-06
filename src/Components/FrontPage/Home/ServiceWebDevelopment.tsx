@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ecom from "../../../../public/image/test 1.png";
-import web from "../../../../public/image/test 2.png";
-import erp from "../../../../public/image/erp.jpeg";
-import application from "../../../../public/image/application.png";
+import ecom from "../../../../public/image/Banner/web app.gif";
+import web from "../../../../public/image/Banner/erp.gif";
+import erp from "../../../../public/image/Banner/web development.gif";
+import application from "../../../../public/image/Banner/Ecommerce.gif";
 import {
   AnimatedButton,
   AnimatedText,
 } from "@/Components/Animation/AnimatedText ";
+import TextAnimation from "@/Components/Animation/TextAnimation";
 
 const ServiceWebDevelopment = () => {
   const items = [
@@ -55,20 +56,17 @@ const ServiceWebDevelopment = () => {
                   alt={item.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg bg-[#003249] transform transition-transform duration-500 group-hover:scale-110"
+                  className="rounded-lg bg-[#009975] transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
             </div>
           ))}
         </div>
         <div className=" space-y-6">
-          <div className="flex gap-6 items-center vigaRegular">
-            <h1 className=" md:text-5xl text-3xl primary vigaRegular">
-              WEVLOPER |
-            </h1>
-            <h1 className=" text-[#2C2A77] md:text-5xl text-3xl vigaRegular">
-              Technology
-            </h1>
+          <div className="flex items-center vigaRegular">
+            <div className=" md:text-5xl text-3xl primary vigaRegular">
+              <TextAnimation title=" WEVLOPER | Technology" />
+            </div>
           </div>
           <AnimatedText primaryColor="#2C2A77" secondaryColor="#33B999">
             Website Development
@@ -82,7 +80,11 @@ const ServiceWebDevelopment = () => {
           <AnimatedText primaryColor="#2C2A77" secondaryColor="#33B999">
             ERP Development
           </AnimatedText>
-          <AnimatedButton href="/technology">Explore Now →</AnimatedButton>
+
+          <AnimatedButton href="/technology" bg="#009975">
+            Explore Technology →
+          </AnimatedButton>
+
           {/* <h1 className=" text-[#2C2A77] md:text-4xl text-3xl font-rubik font-normal">
             Website Development
           </h1>

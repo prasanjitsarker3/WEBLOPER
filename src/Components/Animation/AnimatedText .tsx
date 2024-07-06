@@ -46,9 +46,11 @@ export const AnimatedText = ({
 export const AnimatedButton = ({
   children,
   href,
+  bg,
 }: {
   children: any;
   href: any;
+  bg: string;
 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
@@ -67,11 +69,47 @@ export const AnimatedButton = ({
       transition={{ duration: 2 }}
     >
       <Link href={href}>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-[#2C2A77] border-emerald-500 text-white mx-auto text-center rounded-full relative mt-4">
+        <button
+          // style={{ backgroundColor: bg }}
+          className={`px-4 py-2 backdrop-blur-sm border bg-[${bg}] text-white mx-auto text-center rounded-full relative mt-4`}
+        >
           <span>{children}</span>
           <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
         </button>
       </Link>
     </motion.div>
+  );
+};
+
+export const AnimatedTextCus = ({
+  children,
+  primaryColor,
+  secondaryColor,
+}: AnimatedTextProps) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+        color: secondaryColor,
+        transition: { duration: 2 },
+      });
+    }
+  }, [controls, inView, secondaryColor]);
+
+  return (
+    <motion.h1
+      ref={ref}
+      initial={{ opacity: 0.5, y: 20, color: primaryColor }}
+      animate={controls}
+      transition={{ duration: 2 }}
+      className="md:text-4xl text-3xl font-rubik font-normal"
+      whileInView={{ color: secondaryColor }}
+    >
+      {children}
+    </motion.h1>
   );
 };

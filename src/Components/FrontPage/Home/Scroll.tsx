@@ -2,13 +2,14 @@ import Image from "next/image";
 import React from "react";
 import case1 from "../../../../public/image/Case/case 1.1.png";
 import case2 from "../../../../public/image/Case/case 2.2.png";
-import case3 from "../../../../public/image/Case/case 2.3.png";
+import case3 from "../../../../public/image/Case/Frame 18 (3).png";
+import case4 from "../../../../public/image/Case/Frame 19 (2).png";
 
 const Scroll = () => {
   const content = [
     {
       title: "Collaborative Editing",
-      img: case1,
+      img: case3,
     },
     {
       title: "Real time changes",
@@ -16,39 +17,39 @@ const Scroll = () => {
     },
     {
       title: "Version control",
-      img: case3,
+      img: case1,
     },
     {
       title: "Running out of content",
-      img: case2,
+      img: case4,
     },
   ];
 
   return (
-    <div className="md:px-24 py-24">
+    <div className="md:px-24 md:py-24 py-12">
       <div className="md:h-[30rem] relative overflow-y-auto scroll-hide flex flex-col md:flex-row justify-center w-full">
         <div className="rounded-md sticky top-10 md:overflow-hidden md:w-1/2 ">
           <div className="space-y-3 md:text-left text-center">
             <h1 className="text-2xl  text-[#009975] space-x-5">CASE STUDIES</h1>
-            <h1 className="text-5xl font-bold space-x-6 text-[#009975] vigaRegular">
+            <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
               We do are digital
             </h1>
-            <h1 className="text-5xl font-bold space-x-6 text-[#009975] vigaRegular">
+            <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
               transformation
             </h1>
-            <h1 className="text-5xl font-bold space-x-6 text-[#009975] vigaRegular">
+            <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
               We envision
             </h1>
-            <h1 className="text-5xl font-bold space-x-6 text-[#009975] vigaRegular">
+            <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
               building a new
             </h1>
-            <h1 className="text-5xl font-bold space-x-6 text-[#009975] vigaRegular">
+            <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
               future by
             </h1>
-            <h1 className="text-5xl font-bold space-x-6 text-[#009975] vigaRegular">
+            <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
               harnessing the
             </h1>
-            <h1 className="text-5xl font-bold space-x-6 text-[#009975] vigaRegular">
+            <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
               potential of technology
             </h1>
           </div>

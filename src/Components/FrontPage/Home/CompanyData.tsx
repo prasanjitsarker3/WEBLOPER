@@ -21,16 +21,10 @@ const CompanyData = () => {
     },
     {
       id: 4,
-      title: "& Much More",
-      heading: "View Work History",
+      title: "12 +",
+      heading: "Complete Projects",
     },
   ];
-
-  const colors = ["#FFD4EE", "#D3FEE8", "#D9D3FF", "#C5E8FF"];
-
-  const getRandomColor = () => {
-    return colors[Math.floor(Math.random() * colors.length)];
-  };
 
   return (
     <div className="py-20 md:px-24 px-8">
@@ -38,10 +32,10 @@ const CompanyData = () => {
         <div className="md:w-1/2 w-full mx-auto">
           <div className="space-y-6">
             <div>
-              <h1 className="vigaRegular md:text-5xl text-3xl text-[#009975]">
+              <h1 className="vigaRegular md:text-5xl text-3xl text-[#2a286e]">
                 Let the numbers{" "}
               </h1>
-              <h1 className="vigaRegular md:text-5xl text-3xl text-[#009975] pt-2">
+              <h1 className="vigaRegular md:text-5xl text-3xl text-[#2a286e] pt-2">
                 speak
               </h1>
             </div>
@@ -61,16 +55,13 @@ const CompanyData = () => {
             {data.map((item, index) => (
               <motion.div
                 key={item.id}
-                className={`p-6 rounded-lg ${
+                className={`p-6 rounded-lg bg-[#003249] ${
                   item.id === 2 || item.id === 4 ? "mt-8" : "mb-8"
                 }`}
-                style={{ backgroundColor: getRandomColor() }}
-                whileHover={{ backgroundColor: "#f0f0f0", scale: 1.05 }}
+                whileHover={{ backgroundColor: "#003249", scale: 1.05 }}
               >
-                <h1 className="text-3xl font-bold text-[#2a286e]">
-                  {item.title}
-                </h1>
-                <h1 className="text-xl text-slate-800">{item.heading}</h1>
+                <h1 className="text-3xl font-bold text-white">{item.title}</h1>
+                <h1 className="text-xl text-white">{item.heading}</h1>
               </motion.div>
             ))}
           </div>

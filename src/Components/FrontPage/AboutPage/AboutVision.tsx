@@ -4,9 +4,9 @@ import React from "react";
 const AboutVision = () => {
   return (
     <div className=" md:px-24 py-16 px-8 bg-[#F8FBFE]">
-      <div className=" w-full flex flex-col-reverse md:flex-row gap-12">
+      <div className=" w-full flex flex-col md:flex-row gap-12">
         <div className=" md:w-1/2 w-full">
-          <h1 className=" vigaRegular text-5xl text-[#2C2A77] pb-5">
+          <h1 className=" vigaRegular md:text-5xl text-3xl text-[#2C2A77] pb-5">
             How our Vision Became Reality{" "}
           </h1>
           <div>
@@ -22,7 +22,7 @@ const AboutVision = () => {
           </div>
         </div>
         <div className=" md:w-1/2 w-full space-y-6">
-          <h1 className=" vigaRegular text-2xl text-[#2C2A77] text-justify">
+          <h1 className=" vigaRegular md:text-2xl text-xl text-[#2C2A77] text-justify">
             Our company specializes in software outsourcing and provides robust,
             scalable, and efficient solutions to clients around the world.
           </h1>

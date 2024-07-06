@@ -51,12 +51,12 @@ const TeamMentor = () => {
             </button>
           </div>
         </div>
-        <div className=" md:w-1/2 w-full mx-auto bg-[#FFD4EE] p-6 rounded-md shadow">
+        <div className=" md:w-1/2 w-full mx-auto bg-[#003249] p-6 rounded-md shadow">
           <div className=" space-y-5 ">
-            <h1 className=" vigaRegular text-4xl text-[#2C2A77]">
+            <h1 className=" vigaRegular text-4xl text-white">
               MEET THE MANAGEMENT TEAM
             </h1>
-            <h1 className=" font-exotwo text-xl font-medium text-slate-800">
+            <h1 className=" font-exotwo text-xl font-medium text-white">
               They are regarded as the pioneer of wevloper, spearheading its
               inception and early growth with visionary leadership and
               innovative strategies.

@@ -24,3 +24,18 @@
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f3f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #009975;
+  border: 5px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}

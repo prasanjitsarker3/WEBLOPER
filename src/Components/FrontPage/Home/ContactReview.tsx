@@ -53,7 +53,7 @@ const ContactReview = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % clients.length);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [clients.length]);
@@ -76,7 +76,7 @@ const ContactReview = () => {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.2 }}
                   className="w-full h-full"
                 >
                   <h1 className="text-lg h-44 text-slate-800 font-medium text-justify">

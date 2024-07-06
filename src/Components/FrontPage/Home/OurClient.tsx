@@ -53,7 +53,7 @@ const OurClient = () => {
             whileHover={{
               backgroundColor: "#10B981", // Change to desired hover color
               transition: {
-                duration: 2,
+                duration: 1,
                 ease: "easeInOut",
               },
             }}

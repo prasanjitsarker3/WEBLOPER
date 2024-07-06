@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import digi from "../../../../public/image/New Banner/Frame_20-removebg-preview.png";
 
 const DigitalCard = () => {
   const [hoveredId, setHoveredId] = useState(null);
@@ -11,7 +12,7 @@ const DigitalCard = () => {
       id: 1,
       title: "Digital Marketing",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      img: "https://img.freepik.com/free-vector/digital-marketing-infographic_52683-9003.jpg?t=st=1719313186~exp=1719316786~hmac=24f21ce9e58c47416558b3a042ed081137c28459a9997b40a0ee07b755edc933&w=740",
+      img: digi,
     },
     {
       id: 2,
@@ -45,7 +46,7 @@ const DigitalCard = () => {
   };
 
   return (
-    <div className="py-24 md:px-24 px-6">
+    <div className="py-24 md:px-24 px-6 bg-[#F8FBFE]">
       <motion.div
         className={`grid gap-4 ${
           hoveredId ? "md:grid-cols-5" : "md:grid-cols-4"
@@ -55,13 +56,13 @@ const DigitalCard = () => {
         {items.map((item) => (
           <motion.div
             key={item.id}
-            className={`relative overflow-hidden ${
+            className={`relative overflow-hidden bg-slate-700 ${
               hoveredId === item.id ? "col-span-2" : ""
             }`}
             onMouseEnter={() => handleHover(item.id)}
             onMouseLeave={handleHoverOut}
             layout
-            transition={{ duration: 3 }}
+            transition={{ duration: 0.5 }}
           >
             <div className="relative h-[80vh]">
               <Image

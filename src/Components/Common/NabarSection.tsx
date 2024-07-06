@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Facebook, Home, Instagram, Menu, Phone, Route, X } from "lucide-react";
+import logo from "../../../public/image/Banner/WEVLOPER-NEW-LOGO-FULL-LENGTH.png";
+import Image from "next/image";
+import { log } from "console";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,16 +53,14 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center ">
-            <Link href="/">
-              <h1
-                className={`${
-                  scrolling
-                    ? "text-2xl font-bold text-black"
-                    : "text-2xl font-bold text-white"
-                }`}
-              >
-                Logo
-              </h1>
+            <Link href="/" className=" relative brightness-125">
+              <Image
+                src={logo}
+                alt=""
+                height={500}
+                width={500}
+                className=" md:h-16 h-12 w-full"
+              />
             </Link>
           </div>
           <div className="flex items-center">
@@ -67,14 +68,17 @@ const Header = () => {
               onClick={toggleMenu}
               className={`${
                 scrolling
-                  ? "text-black z-50 focus:outline-none"
-                  : "text-white z-50 focus:outline-none"
+                  ? "text-[#009975] brightness-125 font-bold z-50 focus:outline-none"
+                  : "text-[#009975] brightness-125 font-bold z-50 focus:outline-none"
               }`}
             >
               {isOpen ? (
-                <X className="h-6 w-6" aria-hidden="true" />
+                <X
+                  className="h-6 w-6 font-bold text-white"
+                  aria-hidden="true"
+                />
               ) : (
-                <Menu className="h-6 w-6" aria-hidden="true" />
+                <Menu className="h-6 w-6 font-bold" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -84,18 +88,49 @@ const Header = () => {
         initial={{ opacity: 0, y: "-100%" }}
         animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : "-100%" }}
         transition={{ duration: 2 }}
-        className="fixed top-0 left-0 w-full h-full bg-gradient-to-r from-[#8763F7] via-[#AB54F2] to-[#C250D2] flex flex-col items-center justify-center z-30"
+        className="fixed top-0 left-0 w-full h-full bg-[#009975] flex flex-col items-center justify-center z-30"
       >
-        <div className="w-full flex justify-evenly">
-          <div className="space-y-4">
+        <div className="w-full flex flex-col md:flex-row md:justify-evenly  justify-center">
+          <div className="space-y-2 flex flex-col mx-auto">
             <Link
               className="flex items-center gap-3"
               href="/"
               onClick={() => setIsOpen(false)}
             >
               <Home size={20} className="text-white" />
-              <h1 className="text-white uppercase vigaRegular text-xl hover:text-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-white">
+              <h1 className="text-white uppercase font-exotwo text-lg hover:text-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-white">
                 Home
+              </h1>
+            </Link>
+
+            <Link
+              className="flex items-center gap-3"
+              href="/technology"
+              onClick={() => setIsOpen(false)}
+            >
+              <Route size={20} className="text-white" />
+              <h1 className="text-white uppercase font-exotwo text-lg hover:text-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-white">
+                Technology
+              </h1>
+            </Link>
+            <Link
+              className="flex items-center gap-3"
+              href="/digital"
+              onClick={() => setIsOpen(false)}
+            >
+              <Route size={20} className="text-white" />
+              <h1 className="text-white hover:text-gray-300 font-exotwo text-lg uppercase py-2 focus:outline-none focus:ring-2 focus:ring-white">
+                Digital
+              </h1>
+            </Link>
+            <Link
+              className="flex items-center gap-3"
+              href="/studio"
+              onClick={() => setIsOpen(false)}
+            >
+              <Route size={20} className="text-white" />
+              <h1 className="text-white hover:text-gray-300 font-exotwo text-lg uppercase py-2 focus:outline-none focus:ring-2 focus:ring-white">
+                Studio
               </h1>
             </Link>
             <Link
@@ -104,18 +139,8 @@ const Header = () => {
               onClick={() => setIsOpen(false)}
             >
               <Route size={20} className="text-white" />
-              <h1 className="text-white uppercase vigaRegular text-xl hover:text-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-white">
-                About
-              </h1>
-            </Link>
-            <Link
-              className="flex items-center gap-3"
-              href="/service"
-              onClick={() => setIsOpen(false)}
-            >
-              <Route size={20} className="text-white" />
-              <h1 className="text-white uppercase vigaRegular text-xl hover:text-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-white">
-                Services
+              <h1 className="text-white uppercase font-exotwo text-xl hover:text-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-white">
+                About Us
               </h1>
             </Link>
             <Link
@@ -124,23 +149,17 @@ const Header = () => {
               onClick={() => setIsOpen(false)}
             >
               <Route size={20} className="text-white" />
-              <h1 className="text-white hover:text-gray-300 vigaRegular text-xl uppercase py-2 focus:outline-none focus:ring-2 focus:ring-white">
+              <h1 className="text-white uppercase font-exotwo text-xl hover:text-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-white">
                 Contact
               </h1>
             </Link>
-            <span
-              onClick={() => setIsOpen(false)}
-              className="text-white flex items-center gap-3 py-2"
-            >
-              <Phone size={20} className="text-white" />
-              <p className="vigaRegular text-xl"> 09837483</p>
-            </span>
           </div>
-          <div className=" flex gap-12">
-            <div className="border-2 border-white"></div>
+          <div className="border-2 border-white block md:hidden mx-8"></div>
+          <div className=" flex gap-12 mx-auto md:pt-0 pt-3">
+            <div className="border-2 border-white hidden md:block"></div>
             <div className="space-y-3">
               <div>
-                <h1 className="vigaRegular text-yellow-500 text-2xl">Office</h1>
+                <h1 className="vigaRegular text-[#2C2A77] text-2xl">Office</h1>
                 <p className="text-white text-lg">
                   Plot 6, Road 4/1, Block-B, Section-12
                 </p>
@@ -149,14 +168,12 @@ const Header = () => {
                 </p>
               </div>
               <div>
-                <h1 className="vigaRegular text-yellow-500 text-2xl">
-                  Contact
-                </h1>
-                <p className="text-white text-lg">+8801868849354</p>
-                <p className="text-white text-lg">kholil123@#gmail.com</p>
+                <h1 className="vigaRegular text-[#2C2A77] text-2xl">Contact</h1>
+                <p className="text-white text-lg">+8801308900149</p>
+                <p className="text-white text-lg">info@wevloper.com</p>
               </div>
               <div>
-                <h1 className="vigaRegular text-yellow-500 text-2xl">
+                <h1 className="vigaRegular text-[#2C2A77] text-2xl">
                   Follow Us
                 </h1>
                 <div className="flex items-center gap-3">

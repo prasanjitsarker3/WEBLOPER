@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Common/NabarSection";
-
-// const inter = Inter({ subsets: ["latin"] });
+import Footer from "@/Components/Common/Footer";
 
 export const metadata: Metadata = {
   title: "WEVLOPER",
   description: "We provide technology service",
+  icons: {
+    icon: "/logo-border.png",
+  },
 };
 
 export default function RootLayout({
@@ -20,6 +22,7 @@ export default function RootLayout({
       <body className=" max-w-full">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

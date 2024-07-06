@@ -1,9 +1,16 @@
+import ContactBanner from "@/Components/FrontPage/Contact/ContactBanner";
+import ContactForm from "@/Components/FrontPage/Contact/ContactFrom";
+import ContactSwiper from "@/Components/FrontPage/Contact/ContactSwiper";
+import Contact from "@/Components/FrontPage/Contact/WhyContact";
 import React from "react";
 
 const ContactPage = () => {
   return (
     <div>
-      <h1>Contact Page</h1>
+      <ContactBanner />
+      {/* <Contact /> */}
+      <ContactSwiper />
+      <ContactForm />
     </div>
   );
 };

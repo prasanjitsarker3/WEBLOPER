@@ -82,12 +82,12 @@ const AboutExpertises = () => {
   const colors = ["#FFD4EE", "#D3FEE8", "#D9D3FF", "#C5E8FF", "#FFEECF"];
 
   return (
-    <div className="md:px-24 py-16 bg-[#F8FBFE] rounded">
+    <div className="md:px-24 px-8 py-16 bg-[#F8FBFE] rounded">
       <div className="py-5">
         <h1 className="vigaRegular text-[#2C2A77] text-3xl text-center">
           Our Industry Expertises
         </h1>
-        <h1 className="font-exotwo text-xl text-center md:px-16 px-8">
+        <h1 className="font-exotwo text-xl text-center md:px-16">
           Our deep understanding of diverse industries empowers us to design
           customized software solutions. Let our expertise be the catalyst for
           your next triumph.

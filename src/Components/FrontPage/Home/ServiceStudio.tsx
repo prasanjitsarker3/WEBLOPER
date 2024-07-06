@@ -1,10 +1,16 @@
 import Image from "next/image";
 import React from "react";
-import firs1 from "../../../../public/image/graphics.png";
-import firs2 from "../../../../public/image/ui ux.png";
-import firs3 from "../../../../public/image/video.png";
-import firs4 from "../../../../public/image/wordpress.png";
+import firs1 from "../../../../public/image/Banner/graphics design.gif";
+import firs2 from "../../../../public/image/Banner/ui ux design.gif";
+import firs3 from "../../../../public/image/Banner/wordpress design.gif";
+import firs4 from "../../../../public/image/Banner/video editing.gif";
 import Link from "next/link";
+import {
+  AnimatedButton,
+  AnimatedText,
+  AnimatedTextCus,
+} from "@/Components/Animation/AnimatedText ";
+import TextAnimation from "@/Components/Animation/TextAnimation";
 
 const ServiceStudio = () => {
   const items = [
@@ -36,18 +42,16 @@ const ServiceStudio = () => {
     <div className="md:px-24 px-6 mx-auto">
       <div className="grid md:grid-cols-2 gap-12 py-20">
         <div className=" space-y-6">
-          <div className="flex gap-6 items-center text-justify">
-            <h1 className=" md:text-5xl text-3xl primary vigaRegular">
-              WEVLOPER |
-            </h1>
-            <h1 className=" text-[#2C2A77] md:text-5xl text-4xl vigaRegular">
-              Studio
-            </h1>
+          <div className="flex items-center text-justify">
+            <div className=" md:text-5xl text-3xl primary vigaRegular">
+              <TextAnimation title=" WEVLOPER | Studio" />
+            </div>
           </div>
-          <h1 className=" text-[#2C2A77] md:text-5xl text-3xl text-justify font-rubik font-normal">
+
+          {/* <h1 className=" text-[#2C2A77] md:text-5xl text-3xl text-justify font-rubik font-normal">
             Graphics Design
           </h1>
-          <h1 className=" text-[#2C2A77] md:text-5xl text-3xl text-justify font-rubik font-normal">
+          <h1 className=" text-[#2C2A77] md:text-5xl text-3xl text-justify  font-normal">
             Wordpress Design
           </h1>
           <h1 className=" text-[#2C2A77] md:text-5xl text-3xl font-rubik font-normal">
@@ -55,13 +59,22 @@ const ServiceStudio = () => {
           </h1>
           <h1 className=" text-[#2C2A77] md:text-5xl text-3xl font-rubik font-normal">
             UI / UX
-          </h1>
-          <Link href={"/studio"}>
-            <button className="px-4 py-2 backdrop-blur-sm border bg-[#2C2A77] border-emerald-500 text-white mx-auto text-center rounded-full relative mt-4">
-              <span>Explore Now →</span>
-              <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-            </button>
-          </Link>
+          </h1> */}
+          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
+            Graphics Design
+          </AnimatedTextCus>
+          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
+            Wordpress Design
+          </AnimatedTextCus>
+          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
+            Video Editing
+          </AnimatedTextCus>
+          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
+            UI / UX
+          </AnimatedTextCus>
+          <AnimatedButton href="/studio" bg="#E86252">
+            Explore Studio →
+          </AnimatedButton>
         </div>
         <div className="grid grid-cols-2 gap-3">
           {items.map((item, index) => (
@@ -79,7 +92,7 @@ const ServiceStudio = () => {
                   alt={item.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg transform transition-transform duration-500 group-hover:scale-110"
+                  className="rounded-lg bg-[#E86252] transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               {/* <h1 className=" -mt-8 pb-3 text-center text-white font-semibold z-50">
