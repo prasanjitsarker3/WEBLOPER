@@ -8,8 +8,8 @@ const nextConfig = {
         hostname: "**",
       },
     ],
-    loader: "default",
-    path: "/",
+    // loader: "default",
+    // path: "/",
   },
 };
 
