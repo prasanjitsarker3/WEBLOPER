@@ -1,22 +1,13 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "../../../public/image/Banner/WEVLOPER-NEW-LOGO-FULL-LENGTH.png";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaDribbble,
-  FaMedium,
-  FaPinterest,
-} from "react-icons/fa";
-import Link from "next/link";
-import { Locate, Mail, Phone } from "lucide-react";
-// import { SiClutch, SiLucidchart } from "react-icons/si";
+import { FaFacebook, FaLinkedin, FaDribbble } from "react-icons/fa";
+import useFormattedDate from "./useFormattedDate";
 
 const Footer = () => {
   const [temperature, setTemperature] = useState("");
-  const [date, setDate] = useState(new Date());
+  const date = new Date();
+  const formattedDate = useFormattedDate(date);
 
   useEffect(() => {
     const fetchTemperature = () => {
@@ -26,15 +17,6 @@ const Footer = () => {
 
     fetchTemperature();
   }, []);
-
-  const formatTime = (date: any) => {
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const ampm = hours >= 12 ? "PM" : "AM";
-    const formattedHours = hours % 12 || 12;
-    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
-    return `${formattedHours}:${formattedMinutes} ${ampm}`;
-  };
 
   return (
     <div className="w-full bg-gray-800">
@@ -47,7 +29,7 @@ const Footer = () => {
             height={30}
           />
           <h1>Dhaka, Bangladesh</h1>
-          <h1>{formatTime(date)}</h1>
+          <h1>{formattedDate}</h1>
           <h1>{temperature !== null ? `${temperature}°C` : "Loading..."}</h1>
         </div>
         <div className="flex justify-center items-center space-x-4 text-white">
