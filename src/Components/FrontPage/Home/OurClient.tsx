@@ -44,7 +44,7 @@ const OurClient = () => {
 
   return (
     <div className="py-16 bg-white md:px-24 px-8">
-      <h1 className=" vigaRegular text-5xl text-[#2C2A77] py-3">Our Clients</h1>
+      <h1 className=" vigaRegular text-5xl text-[#003249] py-3">Our Clients</h1>
       <div className="container mx-auto grid grid-cols-2 md:grid-cols-7 gap-8 pt-12">
         {items.map((item) => (
           <motion.div

@@ -3,10 +3,10 @@ import React from "react";
 import Image from "next/image";
 import banner from "../../assests/Frame 1 (4).png";
 import Link from "next/link";
-import digital from "../../../../public/image/Banner/research and development.gif";
-import socail from "../../../../public/image/Banner/digital marketing.gif";
-import busn from "../../../../public/image/Banner/social media marketing.gif";
-import research from "../../../../public/image/Banner/business analysis.gif";
+import digital from "../../../../image/Banner/research and development.gif";
+import socail from "../../../../image/Banner/digital marketing.gif";
+import busn from "../../../../image/Banner/social media marketing.gif";
+import research from "../../../../image/Banner/business analysis.gif";
 import {
   AnimatedButton,
   AnimatedTextCus,
@@ -17,22 +17,22 @@ const ServiceGallery = () => {
   const items = [
     {
       id: 1,
-      img: "/image/Banner/research and development.gif",
+      img: "/image/Digital/DigitalMarketing.gif",
       title: "Digital Marketing",
     },
     {
       id: 2,
-      img: "/image/Banner/digital marketing.gif",
+      img: "/image/Digital/SocialMedialMarketing.gif",
       title: "Social Media Marketing",
     },
     {
       id: 3,
-      img: "/image/Banner/social media marketing.gif",
+      img: "/image/Digital/BusinessAnalysis.gif",
       title: "Business Analysis",
     },
     {
       id: 4,
-      img: "/image/Banner/business analysis.gif",
+      img: "/image/Digital/Research&Development.gif",
       title: "Research",
     },
   ];
@@ -60,7 +60,7 @@ const ServiceGallery = () => {
                   alt={item.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg bg-[#003249] transform transition-transform duration-500 group-hover:scale-110"
+                  className="rounded-lg  transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
             </div>
@@ -73,16 +73,16 @@ const ServiceGallery = () => {
             </div>
           </div>
 
-          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#003249 ">
+          <AnimatedTextCus primaryColor="#003249" secondaryColor="#003249 ">
             Digital Marketing
           </AnimatedTextCus>
-          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#003249 ">
+          <AnimatedTextCus primaryColor="#003249" secondaryColor="#003249 ">
             Social Media Marketing
           </AnimatedTextCus>
-          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#003249 ">
+          <AnimatedTextCus primaryColor="#003249" secondaryColor="#003249 ">
             Business Analysis
           </AnimatedTextCus>
-          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#003249 ">
+          <AnimatedTextCus primaryColor="#003249" secondaryColor="#003249 ">
             Research & Analysis
           </AnimatedTextCus>
           <AnimatedButton href="/digital" bg="#003249">

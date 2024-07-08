@@ -10,22 +10,22 @@ const ServiceWebDevelopment = () => {
   const items = [
     {
       id: 1,
-      img: "/image/Banner/web app.gif",
+      img: "/image/Technology/EcommerceDevelopment.gif",
       title: "Ecommerce Development",
     },
     {
       id: 2,
-      img: "/image/Banner/erp.gif",
+      img: "/image/Technology/WebDevelopment.gif",
       title: "Wev Development",
     },
     {
       id: 3,
-      img: "/image/Banner/web development.gif",
+      img: "/image/Technology/WebApplication.gif",
       title: "Wev Application",
     },
     {
       id: 4,
-      img: "/image/Banner/Ecommerce.gif",
+      img: "/image/Technology/ErpSoftware.gif",
       title: "ERP Development",
     },
   ];
@@ -51,7 +51,7 @@ const ServiceWebDevelopment = () => {
                   alt={item.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg bg-[#009975] transform transition-transform duration-500 group-hover:scale-110"
+                  className="rounded-lg transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
             </div>
@@ -63,20 +63,20 @@ const ServiceWebDevelopment = () => {
               <TextAnimation title=" WEVLOPER | Technology" />
             </div>
           </div>
-          <AnimatedText primaryColor="#2C2A77" secondaryColor="#33B999">
+          <AnimatedText primaryColor="#003249" secondaryColor="#003249">
             Website Development
           </AnimatedText>
-          <AnimatedText primaryColor="#2C2A77" secondaryColor="#33B999">
+          <AnimatedText primaryColor="#003249" secondaryColor="#003249">
             Ecommerce Development
           </AnimatedText>
-          <AnimatedText primaryColor="#2C2A77" secondaryColor="#33B999">
+          <AnimatedText primaryColor="#003249" secondaryColor="#003249">
             Web Application Development
           </AnimatedText>
-          <AnimatedText primaryColor="#2C2A77" secondaryColor="#33B999">
+          <AnimatedText primaryColor="#003249" secondaryColor="#003249">
             ERP Development
           </AnimatedText>
 
-          <AnimatedButton href="/technology" bg="#009975">
+          <AnimatedButton href="/technology" bg="#003249">
             Explore Technology →
           </AnimatedButton>
         </div>

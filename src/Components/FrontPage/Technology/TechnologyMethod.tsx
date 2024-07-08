@@ -61,13 +61,16 @@ const TechnologyMethod = () => {
           {agileSteps.map((step, index) => (
             <motion.div
               key={index}
-              style={{ backgroundColor: getRandomColor() }}
-              whileHover={{ backgroundColor: "#f0f0f0", scale: 1.05 }}
+              // style={{ backgroundColor: getRandomColor() }}
+              whileHover={{ scale: 1.05 }}
+              className="bg-[#003249]"
             >
               <div className="max-w-sm rounded overflow-hidden p-6 ">
-                <div className="text-6xl text-green-500 mb-4">{step.icon}</div>
-                <div className="font-bold text-xl mb-2">{step.title}</div>
-                <p className="text-gray-700 text-base">{step.about}</p>
+                <div className="text-6xl text-[#009975] mb-4">{step.icon}</div>
+                <div className="font-bold  text-white text-xl mb-2">
+                  {step.title}
+                </div>
+                <p className="text-white text-base">{step.about}</p>
               </div>
             </motion.div>
           ))}

@@ -28,7 +28,7 @@ const Scroll = () => {
           <div className="space-y-3 md:text-left text-center">
             <h1 className="text-2xl  text-[#009975] space-x-5">CASE STUDIES</h1>
             <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
-              We do are digital
+              We do digital
             </h1>
             <h1 className="md:text-5xl text-3xl font-bold space-x-6 text-[#009975] vigaRegular">
               transformation
@@ -65,9 +65,6 @@ const Scroll = () => {
                   className="rounded-lg transform transition-transform duration-500 group-hover:scale-110 group-hover:rounded-lg"
                 />
               </div>
-              <h1 className=" -mt-8 pb-3 text-center text-white font-semibold z-30  group-hover:text-yellow-500">
-                {item.title}
-              </h1>
             </div>
           ))}
         </div>

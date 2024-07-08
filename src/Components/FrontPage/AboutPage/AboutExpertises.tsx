@@ -84,7 +84,7 @@ const AboutExpertises = () => {
   return (
     <div className="md:px-24 px-8 py-16 bg-[#F8FBFE] rounded">
       <div className="py-5">
-        <h1 className="vigaRegular text-[#2C2A77] text-3xl text-center">
+        <h1 className="vigaRegular text-[#003249] text-3xl text-center">
           Our Industry Expertises
         </h1>
         <h1 className="font-exotwo text-xl text-center md:px-16">
@@ -101,7 +101,7 @@ const AboutExpertises = () => {
             style={{ backgroundColor: colors[index % colors.length] }}
           >
             <div className="flex flex-col items-center justify-center">
-              <div className="text-4xl mb-2 text-[#2C2A77]">{item.icon}</div>
+              <div className="text-4xl mb-2 text-[#003249]">{item.icon}</div>
               <h2 className="font-exotwo text-2xl text-center text-slate-800">
                 {item.title}
               </h2>

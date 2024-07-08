@@ -9,7 +9,7 @@ const AboutBanner = () => {
       <div className="w-full h-full flex flex-col md:flex-row md:gap-12 gap-6 items-center">
         <div className=" md:w-1/2 w-full flex items-center ">
           <div className="space-y-5">
-            <div className=" vigaRegular md:text-5xl text-4xl text-[#2C2A77]">
+            <div className=" vigaRegular md:text-5xl text-4xl text-[#003249]">
               <TextAnimation title="RISING FROM" />
               <TextAnimation title="LOCAL ORIGINS TO" />
               <TextAnimation title="  GLOBAL." />
@@ -20,7 +20,7 @@ const AboutBanner = () => {
               detail and flawless execution, ensuring your vision is brought to
               life.
             </p>
-            <button className=" py-3 px-8 bg-[#2C2A77] text-white rounded-3xl uppercase">
+            <button className=" py-3 px-8 bg-[#003249] text-white rounded-3xl uppercase">
               Webloper about us
             </button>
           </div>

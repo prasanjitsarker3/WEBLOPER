@@ -59,21 +59,23 @@ const DigitalMarketingServices = () => {
   return (
     <div className="md:px-24 px-8 bg-[#F8FBFE] py-10">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-10 text-[#2C2A77]">
+        <h1 className="text-3xl font-bold text-center mb-10 text-[#003249]">
           Our Digital Marketing Services
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="max-w-sm rounded overflow-hidden  p-6 "
-              style={{ backgroundColor: getRandomColor() }}
-              whileHover={{ backgroundColor: "#f0f0f0", scale: 1.05 }}
+              className="max-w-sm rounded overflow-hidden  p-6 bg-[#003249]"
+              // style={{ backgroundColor: getRandomColor() }}
+              whileHover={{ scale: 1.05 }}
               transition={{ duration: 1 }}
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <div className="font-bold text-xl mb-2">{service.title}</div>
-              <p className="text-gray-700 text-base">{service.about}</p>
+              <div className="text-4xl mb-4 text-[#009975]">{service.icon}</div>
+              <div className="font-bold text-white text-xl mb-2">
+                {service.title}
+              </div>
+              <p className="text-white text-base">{service.about}</p>
             </motion.div>
           ))}
         </div>

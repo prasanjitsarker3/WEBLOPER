@@ -45,7 +45,7 @@ const DigitalBanner = () => {
           </motion.p>
 
           <motion.button
-            className="px-4 py-2 backdrop-blur-sm border bg-[#2C2A77] border-emerald-500 text-white mx-auto text-center rounded-full relative mt-4"
+            className="px-4 py-2 backdrop-blur-sm border bg-[#003249] border-emerald-500 text-white mx-auto text-center rounded-full relative mt-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}

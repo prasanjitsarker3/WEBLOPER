@@ -2,10 +2,19 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Facebook, Home, Instagram, Menu, Phone, Route, X } from "lucide-react";
+import {
+  Facebook,
+  Home,
+  Instagram,
+  Linkedin,
+  Menu,
+  Phone,
+  Route,
+  X,
+} from "lucide-react";
 import logo from "../../../public/image/Banner/WEVLOPER-NEW-LOGO-FULL-LENGTH.png";
 import Image from "next/image";
-import { log } from "console";
+import logoFinal from "../../../public/image/Team/WevloperLogoFull.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +64,7 @@ const Header = () => {
           <div className="flex items-center ">
             <Link href="/" className=" relative brightness-125">
               <Image
-                src={logo}
+                src={logoFinal}
                 alt=""
                 height={500}
                 width={500}
@@ -90,8 +99,8 @@ const Header = () => {
         transition={{ duration: 2 }}
         className="fixed top-0 left-0 w-full h-full bg-[#009975] flex flex-col items-center justify-center z-30"
       >
-        <div className="w-full flex flex-col md:flex-row md:justify-evenly  justify-center">
-          <div className="space-y-2 flex flex-col mx-auto">
+        <div className="w-full flex flex-col md:flex-row md:justify-evenly ">
+          <div className="md:space-y-2 space-y-0 flex flex-col md:px-0 px-8">
             <Link
               className="flex items-center gap-3"
               href="/"
@@ -155,11 +164,11 @@ const Header = () => {
             </Link>
           </div>
           <div className="border-2 border-white block md:hidden mx-8"></div>
-          <div className=" flex gap-12 mx-auto md:pt-0 pt-3">
+          <div className=" flex gap-12 md:px-0 px-8  md:pt-0 pt-3">
             <div className="border-2 border-white hidden md:block"></div>
             <div className="space-y-3">
               <div>
-                <h1 className="vigaRegular text-[#2C2A77] text-2xl">Office</h1>
+                <h1 className="vigaRegular text-[#003249] text-2xl">Office</h1>
                 <p className="text-white text-lg">
                   Plot 6, Road 4/1, Block-B, Section-12
                 </p>
@@ -168,23 +177,32 @@ const Header = () => {
                 </p>
               </div>
               <div>
-                <h1 className="vigaRegular text-[#2C2A77] text-2xl">Contact</h1>
+                <h1 className="vigaRegular text-[#003249] text-2xl">Contact</h1>
                 <p className="text-white text-lg">+8801308900149</p>
                 <p className="text-white text-lg">info@wevloper.com</p>
               </div>
               <div>
-                <h1 className="vigaRegular text-[#2C2A77] text-2xl">
+                <h1 className="vigaRegular text-[#003249] text-2xl">
                   Follow Us
                 </h1>
                 <div className="flex items-center gap-3">
                   <div className="border border-white h-10 w-10 flex items-center justify-center rounded-full cursor-pointer">
-                    <X className="text-white" size={20} />
+                    <a
+                      href="https://www.facebook.com/wevloper"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Facebook className="text-white" size={20} />
+                    </a>
                   </div>
                   <div className="border border-white h-10 w-10 flex items-center justify-center rounded-full cursor-pointer">
-                    <Facebook className="text-white" size={20} />
-                  </div>
-                  <div className="border border-white h-10 w-10 flex items-center justify-center rounded-full cursor-pointer">
-                    <Instagram className="text-white" size={20} />
+                    <a
+                      href="https://www.linkedin.com/company/wevloper/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Linkedin className="text-white" size={20} />
+                    </a>
                   </div>
                 </div>
               </div>

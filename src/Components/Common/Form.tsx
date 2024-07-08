@@ -5,7 +5,7 @@ const Form = () => {
   return (
     <div>
       <div className="space-y-3 px-4 mx-auto p-6 py-10 bg-white shadow-md rounded">
-        <h1 className=" vigaRegular text-3xl text-[#2a286e]">
+        <h1 className=" vigaRegular text-3xl text-[#003249]">
           Your Contact information
         </h1>
         <div className="relative">
@@ -45,7 +45,7 @@ const Form = () => {
         </div>
 
         <div className="text-center w-full">
-          <button className="bg-[#2a286e] flex items-center gap-5 justify-center w-full text-white px-4 py-2 rounded-full hover:bg-[#34327a] focus:outline-none">
+          <button className="bg-[#009975] flex items-center gap-5 justify-center w-full text-white px-4 py-2 rounded-full hover:bg-[#003249] focus:outline-none">
             Send Message
             <SendHorizontal size={15} />
           </button>

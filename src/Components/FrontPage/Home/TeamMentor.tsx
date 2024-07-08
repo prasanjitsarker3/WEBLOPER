@@ -35,10 +35,10 @@ const TeamMentor = () => {
         <div className=" md:w-1/2 w-full mx-auto">
           <div className=" space-y-5">
             <div>
-              <h1 className=" vigaRegular text-5xl text-[#2C2A77]">
+              <h1 className=" vigaRegular text-5xl text-[#003249]">
                 Want to join
               </h1>
-              <h1 className=" vigaRegular text-5xl text-[#2C2A77]">Wevloper</h1>
+              <h1 className=" vigaRegular text-5xl text-[#003249]">Wevloper</h1>
             </div>
             <h1 className=" text-xl font-exotwo font-medium text-slate-800 text-justify">
               Wevloper offers a dynamic career path that emphasizes creative
@@ -46,7 +46,7 @@ const TeamMentor = () => {
               options for remote work and career advancement, Wevloper is a
               rewarding option for aspiring developers.
             </h1>
-            <button className="px-4 py-2 backdrop-blur-sm border border-emerald-500/20 bg-[#2a286e] transition-colors duration-500 text-white mx-auto text-center rounded-full relative">
+            <button className="px-4 py-2 backdrop-blur-sm border border-emerald-500/20 bg-[#003249] transition-colors duration-500 text-white mx-auto text-center rounded-full relative">
               <Link href="/technology">
                 <span>Explore More →</span>
               </Link>
@@ -56,7 +56,7 @@ const TeamMentor = () => {
         </div>
         <div className=" md:w-1/2 w-full mx-auto bg-[#003249] p-6 rounded-md shadow">
           <div className=" space-y-5 ">
-            <h1 className=" vigaRegular text-4xl text-white">
+            <h1 className=" vigaRegular text-4xl text-white text-center">
               MEET THE MANAGEMENT TEAM
             </h1>
             <h1 className=" font-exotwo text-xl font-medium text-white">

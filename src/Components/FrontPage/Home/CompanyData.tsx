@@ -12,13 +12,13 @@ const CompanyData = () => {
     },
     {
       id: 2,
-      title: "83 %",
+      title: "100 %",
       heading: "Return Customers",
     },
     {
       id: 3,
-      title: "4 +",
-      heading: "Countries",
+      title: "50 +",
+      heading: "Stack",
     },
     {
       id: 4,
@@ -33,19 +33,19 @@ const CompanyData = () => {
         <div className="md:w-1/2 w-full mx-auto">
           <div className="space-y-6">
             <div>
-              <h1 className="vigaRegular md:text-5xl text-3xl text-[#2a286e]">
+              <h1 className="vigaRegular md:text-5xl text-3xl text-[#003249]">
                 Let the numbers{" "}
               </h1>
-              <h1 className="vigaRegular md:text-5xl text-3xl text-[#2a286e] pt-2">
+              <h1 className="vigaRegular md:text-5xl text-3xl text-[#003249] pt-2">
                 speak
               </h1>
             </div>
             <h1 className="font-exotwo font-medium md:text-2xl text-xl text-slate-800 text-justify">
-              36 months the average time of our partnership with clients. We are
-              proud of 500+ cases and have experience with 200+ technologies,
-              languages, platforms, libraries, and frameworks.
+              We have an amazing 100% customer retention rate since we started.
+              We have 50+ technology & design stack which make sure you get your
+              preferable stack or technology.
             </h1>
-            <button className="px-4 py-2 backdrop-blur-sm border border-emerald-500/20 bg-[#2a286e] transition-colors duration-500 text-white mx-auto text-center rounded-full relative">
+            <button className="px-4 py-2 backdrop-blur-sm border border-emerald-500/20 bg-[#003249] transition-colors duration-500 text-white mx-auto text-center rounded-full relative">
               <Link href="/technology">
                 <span>Explore More →</span>
               </Link>

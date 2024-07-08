@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import tech from "../../../../public/image/MainBanner/TechnologyBanner.gif";
+import studio from "../../../../public/image/MainBanner/StudioBanner.gif";
+import digital from "../../../../public/image/MainBanner/DigitalBanner.gif";
 
 const Banner = () => {
   const items = [
@@ -17,7 +20,7 @@ const Banner = () => {
     },
     {
       id: 2,
-      bgImage: "/image/New Banner/technology.gif",
+      bgImage: tech,
       title: "WEVLOPER Technology",
       link: "/technology",
       heading:
@@ -25,7 +28,7 @@ const Banner = () => {
     },
     {
       id: 3,
-      bgImage: "/image/New Banner/studio-banner.gif",
+      bgImage: studio,
       title: "WEVLOPER Studio",
       link: "/studio",
       heading:
@@ -33,7 +36,7 @@ const Banner = () => {
     },
     {
       id: 4,
-      bgImage: "/image/New Banner/WEVLOPER-digital.gif",
+      bgImage: digital,
       title: "WEVLOPER Digital",
       link: "digital",
       heading:
@@ -48,7 +51,7 @@ const Banner = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === items.length - 1 ? 0 : prevIndex + 1
       );
-    }, 6000);
+    }, 12000);
 
     return () => clearInterval(interval);
   }, [items.length]);
@@ -64,7 +67,7 @@ const Banner = () => {
       <div>
         <div
           key={currentItem.id}
-          className="absolute inset-0 bg-cover bg-center flex items-center justify-center transition-all duration-700"
+          className="absolute h-screen inset-0 bg-cover bg-center flex items-center justify-center transition-all duration-700"
         >
           <Image
             src={currentItem.bgImage}
@@ -74,8 +77,8 @@ const Banner = () => {
             priority
             className="absolute inset-0 w-full h-full bg-cover bg-center"
           />
+
           <div className="text-black flex items-center absolute inset-0 bg-black bg-opacity-50">
-            {/* Make all text full brightness no opacity bg-black bg-opacity-50 */}
             <div
               key={currentItem.id + "-content"}
               className="space-y-3 md:px-24 px-8"
@@ -123,7 +126,7 @@ const Banner = () => {
             currentIndex === 0
               ? "border-blue-500 border-none"
               : "border-gray-300 border-none"
-          }  px-3 text-white rounded-md flex items-center md:gap-2 brightness-125`}
+          }  md:px-3 px-1 text-white rounded-md flex items-center md:gap-2 brightness-125`}
         >
           <div
             className={`w-3 h-3 rounded-full ${
@@ -138,7 +141,7 @@ const Banner = () => {
             currentIndex === 1
               ? "border-blue-500 border-none"
               : "border-gray-300 border-none"
-          }  px-3 text-white rounded-md flex items-center md:gap-2 brightness-125`}
+          }  md:px-3 px-1 text-white rounded-md flex items-center md:gap-2 brightness-125`}
         >
           <div
             className={`w-3 h-3 rounded-full ${
@@ -153,7 +156,7 @@ const Banner = () => {
             currentIndex === 2
               ? "border-blue-500 border-none"
               : "border-gray-300 border-none"
-          }  px-3 text-white rounded-md flex items-center md:gap-2 brightness-125`}
+          }  md:px-3 px-1 text-white rounded-md flex items-center md:gap-2 brightness-125`}
         >
           <div
             className={`w-3 h-3 rounded-full ${
@@ -168,7 +171,7 @@ const Banner = () => {
             currentIndex === 3
               ? "border-blue-500  border-none"
               : "border-yellow-300 border-none"
-          }  px-3 text-white rounded-md flex items-center md:gap-2 brightness-125`}
+          }  md:px-3 px-1 text-white rounded-md flex items-center md:gap-2 brightness-125`}
         >
           <div
             className={`w-3 h-3 rounded-full ${

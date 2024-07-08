@@ -5,7 +5,7 @@ const TechnologyAbout = () => {
     <div className=" md:px-24 py-16 px-8 bg-[#F8FBFE]">
       <div className=" w-full flex flex-col-reverse md:flex-row gap-12">
         <div className=" md:w-1/2 w-full">
-          <h1 className=" vigaRegular text-5xl text-[#2C2A77] pb-5">
+          <h1 className=" vigaRegular text-5xl text-[#003249] pb-5">
             Powering innovation and efficiency
           </h1>
           <div>
@@ -21,7 +21,7 @@ const TechnologyAbout = () => {
           </div>
         </div>
         <div className=" md:w-1/2 w-full space-y-6">
-          <h1 className=" vigaRegular text-2xl text-[#2C2A77] text-justify">
+          <h1 className=" vigaRegular text-2xl text-[#003249] text-justify">
             Wevloper provides ERP solutions, web applications, web development,
             and e-commerce services to help you enhance your workflow, improve
             your online presence, and accelerate business growth. Wevloper

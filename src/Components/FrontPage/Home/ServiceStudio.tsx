@@ -12,22 +12,22 @@ const ServiceStudio = () => {
   const items = [
     {
       id: 1,
-      img: "/image/Banner/graphics design.gif",
+      img: "/image/Studio/GraphicsDesign.gif",
       title: "Graphics Design",
     },
     {
       id: 2,
-      img: "/image/Banner/ui ux design.gif",
+      img: "/image/Studio/WordPressDevelopment.gif",
       title: "Wordpress Development",
     },
     {
       id: 3,
-      img: "/image/Banner/wordpress design.gif",
+      img: "/image/Studio/VideoEditing.gif",
       title: "Video Editing",
     },
     {
       id: 4,
-      img: "/image/Banner/video editing.gif",
+      img: "/image/Studio/UiUxDesign.gif",
       title: "UX / UX",
     },
   ];
@@ -36,7 +36,7 @@ const ServiceStudio = () => {
   };
   return (
     <div className="md:px-24 px-6 mx-auto">
-      <div className="grid md:grid-cols-2 gap-12 py-20">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12 py-20">
         <div className=" space-y-6">
           <div className="flex items-center text-justify">
             <div className=" md:text-5xl text-3xl primary vigaRegular">
@@ -44,19 +44,19 @@ const ServiceStudio = () => {
             </div>
           </div>
 
-          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
+          <AnimatedTextCus primaryColor="#003249" secondaryColor="#003249">
             Graphics Design
           </AnimatedTextCus>
-          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
+          <AnimatedTextCus primaryColor="#003249" secondaryColor="#003249">
             Wordpress Design
           </AnimatedTextCus>
-          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
+          <AnimatedTextCus primaryColor="#003249" secondaryColor="#003249">
             Video Editing
           </AnimatedTextCus>
-          <AnimatedTextCus primaryColor="#2C2A77" secondaryColor="#E86252">
+          <AnimatedTextCus primaryColor="#003249" secondaryColor="#003249">
             UI / UX
           </AnimatedTextCus>
-          <AnimatedButton href="/studio" bg="#E86252">
+          <AnimatedButton href="/studio" bg="#003249">
             Explore Studio →
           </AnimatedButton>
         </div>
@@ -76,7 +76,7 @@ const ServiceStudio = () => {
                   alt={item.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg bg-[#E86252] transform transition-transform duration-500 group-hover:scale-110"
+                  className="rounded-lg  transform transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
             </div>

@@ -18,21 +18,21 @@ const DigitalCard = () => {
       id: 2,
       title: "Social Media Marketing",
       description:
-        "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "Wevloper leverages digital marketing to enhance brand visibility, engage with clients, and drive business growth through strategic, data-driven online campaigns.",
       img: "https://img.freepik.com/free-photo/full-shot-woman-reading-with-smartphone_23-2149629602.jpg?t=st=1719312921~exp=1719316521~hmac=a6cd86cf55b50adaea975b5d2ad4663529ae5fff2ac5724a38680a286c192018&w=740",
     },
     {
       id: 3,
       title: "Business Analysis",
       description:
-        "Nulla facilisi. Mauris tincidunt dui ut ante consequat varius.",
+        "Wevloper utilizes social media marketing to build brand awareness, engage with the community, and drive customer interaction through targeted, creative content on various social media platforms.",
       img: "https://img.freepik.com/premium-photo/financial-analysts-analyze-business-financial-reports-digital-tablet-planning-investment-project-discussion-meeting-corporate-showing-results-their-successful-teamwork_265022-72314.jpg?w=740",
     },
     {
       id: 4,
       title: "Research & Analysis",
       description:
-        "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
+        "Wevloper employs business analysis to identify client needs, optimize processes, and deliver tailored solutions that drive efficiency, innovation, and growth.",
       img: "https://img.freepik.com/premium-photo/digital-design-businessman-show-increase-market-graphic_35761-546.jpg?w=740",
     },
   ];
@@ -81,7 +81,7 @@ const DigitalCard = () => {
               animate={{ opacity: hoveredId === item.id ? 1 : 0 }}
               transition={{ duration: 3 }}
             >
-              <div className="text-center text-white">
+              <div className="text-center text-white vigaRegular px-4 brightness-125">
                 <p className="text-sm mt-2">{item.description}</p>
               </div>
             </motion.div>

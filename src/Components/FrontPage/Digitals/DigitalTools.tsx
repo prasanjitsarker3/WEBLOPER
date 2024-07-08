@@ -41,7 +41,7 @@ const DigitalTools = () => {
   return (
     <div>
       <div className=" md:px-24 px-8 bg-[#F8FBFE] py-12 space-y-12">
-        <h1 className=" text-3xl vigaRegular text-[#2C2A77]">
+        <h1 className=" text-3xl vigaRegular text-[#003249]">
           Digital Tools &Technologies
         </h1>
         <Marquee
