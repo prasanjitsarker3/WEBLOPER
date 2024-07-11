@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import tech from "../../../../public/image/MainBanner/TechnologyBanner.gif";
-import studio from "../../../../public/image/MainBanner/StudioBanner.gif";
-import digital from "../../../../public/image/MainBanner/DigitalBanner.gif";
+import studio from "../../../../public/image/MainBanner/Studio Banner -new.gif";
+import digital from "../../../../public/image/MainBanner/Digital Banner New.gif";
 
 const Banner = () => {
   const items = [
     {
       id: 1,
-      bgImage: "/banner1-demo.png",
+      bgImage: "/image/MainBanner/HomeBanner-New.gif",
       title: "Welcome to WEVLOPER",
       link: "/",
       heading:
@@ -51,7 +51,7 @@ const Banner = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === items.length - 1 ? 0 : prevIndex + 1
       );
-    }, 12000);
+    }, 11000);
 
     return () => clearInterval(interval);
   }, [items.length]);
@@ -78,7 +78,7 @@ const Banner = () => {
             className="absolute inset-0 w-full h-full bg-cover bg-center"
           />
 
-          <div className="text-black flex items-center absolute inset-0 bg-black bg-opacity-50">
+          <div className="text-black flex items-center absolute inset-0 bg-black bg-opacity-30">
             <div
               key={currentItem.id + "-content"}
               className="space-y-3 md:px-24 px-8"

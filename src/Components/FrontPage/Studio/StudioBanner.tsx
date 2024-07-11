@@ -12,14 +12,14 @@ const StudioBanner = () => {
       <div>
         <div className="absolute inset-0 bg-cover bg-center flex items-center justify-center transition-all duration-700">
           <Image
-            src={"/image/download (2).gif"}
+            src={"/image/MainBanner/StudioPage.gif"}
             alt={"Studio"}
             layout="fill"
             objectFit="cover"
             priority
             className="absolute inset-0 w-full h-full bg-cover bg-center"
           />
-          <div className="text-black flex items-center justify-center absolute inset-0 bg-black bg-opacity-60">
+          {/* <div className="text-black flex items-center justify-center absolute inset-0 bg-black bg-opacity-60">
             <div className="space-y-5 md:px-24 px-8">
               <div className=" ">
                 <Image
@@ -40,7 +40,7 @@ const StudioBanner = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
